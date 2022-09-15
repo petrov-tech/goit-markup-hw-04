@@ -134,6 +134,7 @@ img {
 }
 
 .contact .links {
+  display: inline-flex;
   color: var(--secondary-text-color);
 
   font-weight: 500;
@@ -141,13 +142,42 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  align-items: center;
+}
+
+.icon-mail {
+  display: inline-flex;
+  align-items: center;
+}
+
+.icon-envelope {
+  display: block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  text-align: center;
+
+  fill: var(--secondary-text-color);
+}
+
+.icon-tell {
+  display: block;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  text-align: center;
+
+  fill: var(--secondary-text-color);
 }
 
 .contact .links:hover,
 .contact .links:focus,
 .contact-link:hover,
-.contact-link:focus {
+.contact-link:focus,
+.icon-envelope:hover,
+.icon-tell:hover {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* hero section */
@@ -156,7 +186,18 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 
+  height: 600px;
+  min-width: 1600px;
+
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/background.jpg");
   background-color: var(--footer-backgound);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 
   text-align: center;
 }
@@ -223,6 +264,34 @@ img {
   justify-content: space-between;
 }
 
+/* .icon::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--background-secondary-color);
+  border-radius: 4px;
+
+
+  background-image: url(../images/symbol-defs2.svg#icon-antenna);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon.clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon.diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon.astronaut::before {
+  background-image: url(../images/astronaut.svg);
+} */
+
 .advantages {
   padding-bottom: 0;
 }
@@ -253,7 +322,8 @@ img {
 /* section practice */
 
 .practice-title,
-.team-title {
+.team-title,
+.clients-title {
   margin-top: 0;
   margin-bottom: 50px;
   font-weight: 700;
@@ -340,6 +410,8 @@ img {
   text-align: center;
 }
 
+/* clients */
+
 /* footer section */
 
 .footer {
@@ -389,10 +461,6 @@ img {
 }
 
 /* portfolio html */
-
-.main {
-  background-color: var(--background-main-color);
-}
 
 /* button section */
 
@@ -475,6 +543,11 @@ img {
   margin-left: var(--team-list-gap);
   margin-top: var(--team-list-gap);
 }
+.card-filter {
+  box-shadow: border 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 /* card */
 
@@ -483,4 +556,26 @@ img {
 
   background: #ffffff;
   border: 1px solid #eeeeee;
+}
+
+
+
+
+.box {
+  display: inline-block;
+  width: 270px;
+  height: 120px;
+margin-bottom: 30px;
+
+  background-color: var(--background-secondary-color);
+  border-radius: 4px;
+}
+
+.box-icon {
+  display: block;
+   width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  text-align: center;
+margin-bottom: 30px;
 }
