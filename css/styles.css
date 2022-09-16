@@ -430,7 +430,6 @@ img {
   fill: rgba(175, 177, 184, 1);
 }
 
-
 /* clients */
 
 /* footer section */
@@ -489,30 +488,24 @@ img {
 .box-social-footer {
   margin-left: 70px;
   padding-top: 12px;
-    width: 206px;
-  height: 80px;
-
 }
 
 .text-footer {
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-color: var(--white-color);
+  color: var(--white-color);
 }
-
 
 .social-footer {
   display: flex;
   padding-bottom: 30px;
   margin: 0;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 .social-link-footer {
@@ -520,7 +513,7 @@ color: var(--white-color);
   width: 44px;
   height: 44px;
   border-radius: 50px;
-background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
 }
@@ -533,9 +526,8 @@ background-color: rgba(255, 255, 255, 0.1);
   display: block;
   width: 20px;
   height: 20px;
-  fill:var(--white-color);
+  fill: var(--white-color);
 }
-
 
 /* portfolio html */
 
@@ -639,24 +631,10 @@ background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid #eeeeee;
 }
 
-
-
-
-
-
-
-
-
-
 .icon-social:hover {
   fill: var(--background-main-color);
- 
 }
 
 .social-link:hover {
   background-color: var(--accent-color);
-  
 }
-
-
- 
