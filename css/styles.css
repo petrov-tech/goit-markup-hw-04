@@ -16,6 +16,8 @@
   --white-color: #ffffff;
   --accent-color: #2196f3;
 
+  --svg-color: rgba(175, 177, 184, 1);
+
   --team-list-gap: 30px;
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -146,35 +148,25 @@ img {
 }
 
 .icon-mail {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-}
-
-.icon-envelope {
-  display: block;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  text-align: center;
-
   fill: var(--secondary-text-color);
 }
 
+.icon-envelope,
 .icon-tell {
-  display: block;
-  width: 10px;
-  height: 16px;
   margin-right: 10px;
-
-  fill: var(--secondary-text-color);
+  cursor: pointer;
 }
 
 .contact .links:hover,
 .contact .links:focus,
 .contact-link:hover,
 .contact-link:focus,
-.icon-envelope:hover,
-.icon-tell:hover {
+.icon-mail:hover,
+.icon-mail:focus,
+.icon-tell:hover,
+.icon-tell:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -417,20 +409,48 @@ img {
 
   justify-content: center;
   align-items: center;
+
+  background-color: #fff;
+  fill: #afb1b8;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
 }
 
 .social-item + .social-item {
   margin-left: 10px;
 }
 
-.icon-social {
-  display: block;
-  width: 20px;
-  height: 20px;
-  fill: rgba(175, 177, 184, 1);
+/* clients */
+
+.clients-list {
+  display: flex;
 }
 
-/* clients */
+.client-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--svg-color);
+  border-radius: 4px;
+  fill: var(--svg-color);
+
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-client + .icon-client {
+  margin-left: 30px;
+}
+
+.client-link:hover,
+.icon-client:hover {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
 
 /* footer section */
 
@@ -504,7 +524,7 @@ img {
 
 .social-footer {
   display: flex;
-  padding-bottom: 30px;
+  padding-bottom: 0;
   margin: 0;
 }
 
@@ -513,20 +533,22 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.1);
+
   justify-content: center;
   align-items: center;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--white-color);
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
 }
 
 .social-item + .social-item {
   margin-left: 10px;
-}
-
-.icon-social-footer {
-  display: block;
-  width: 20px;
-  height: 20px;
-  fill: var(--white-color);
 }
 
 /* portfolio html */
@@ -627,14 +649,6 @@ img {
 .wraper {
   padding: 20px 24px;
 
-  background: #ffffff;
+  background: var(--white-color);
   border: 1px solid #eeeeee;
-}
-
-.icon-social:hover {
-  fill: var(--background-main-color);
-}
-
-.social-link:hover {
-  background-color: var(--accent-color);
 }
