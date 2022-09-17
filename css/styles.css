@@ -447,7 +447,9 @@ img {
 }
 
 .client-link:hover,
-.icon-client:hover {
+.client-link:focus,
+.icon-client:hover,
+.icon-client:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
 }
